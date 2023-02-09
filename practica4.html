@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lAYOUTS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif
+        }
+        header{
+            background-color: rgb(119, 181, 223);
+            text-align: center;
+            padding: 30px;
+            font-size: 35px;
+            color: white;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: rgb(45, 151, 137);
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(52, 100, 172);
+            height: 300px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: rgb(80, 124, 190);
+            padding: 10px;
+            text-align: center;
+            color: black;
+            height: 300px;
+        }
+        @media(max-width: 600px){
+            nav, article{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Tienda en linea</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href=""> Telefonos</a></li>
+                <br><br><br>
+                <li><a href=""> Linea blanca</a></li>
+                <br><br><br>
+                <li><a href=""> Niños</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Lista de telefonos celulares</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur delectus qui ipsam, nam optio praesentium tenetur voluptates impedit culpa veritatis, debitis non vel suscipit aut enim nesciunt consectetur voluptate eligendi!
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate provident id eius praesentium ducimus sit reprehenderit, rerum labore inventore laudantium molestiae! Saepe atque nobis sunt voluptatibus ipsa unde accusamus excepturi!
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Tienda en linea &copy; 2023</p>
+    </footer>
+</body>
+</html>
