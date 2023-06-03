@@ -5,52 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practica 5</title>
+    <style>
+        input[type=text]{
+            width: 100%;
+            padding: 40px 40px;
+            box-sizing: border-box;
+            font-size: 30px;
+            border: 0;
+        }
+        table, tr, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-color: rgb(0, 0, 0);
+            background-color: gray;
+        }
+        table{
+            border-top: 0px;
+            background-color: gray;
+        }
+    </style>
 </head>
-<body>
-    <h1>Formulario de registro de Alumno</h1>
-    <label for="nombre">nombre</label>
-    <input type="text" placeholder="teclea el nombre del alumno" required> <br><br>
-    
-    <label for="edad"> edad</label>
-    <input type="number" placeholder="teclea la edad" required><br><br>
-
-    <label for="fecha_de_nacimiento">fecha_de_nacimiento</label>
-    <input type="date" required><br><br>
-
-    <input type="radio" name="sexo" required>femenino
-    <input type="radio" name="sexo" required>masculino
-    <br><br>
-    <label for="direccion">direccion</label><br>
-    <textarea name="direccion" id="" cols="38" rows="18" placeholder="teclea direccion"></textarea><br><br>
-    <label for="escuela">escuela</label>
-    <select name="escuela" id="">
-        <option value="">selecciona una escuela</option>
-        <option value="cetis">cetis107</option>
-        <option value="cbtis">cbtis224</option>
-        <option value="otra">otra</option>
-    </select><br><br>
-
-
-    <label for="materias">materias cursadas</label><br>
-    <input type="checbox" name="materia[]" id="">fisica <br>
-    <input type="checbox" name="materia[]" id="">calculo diferencial <br>
-    <input type="checbox" name="materia[]" id="">ingles <br>
-    <input type="checbox" name="materia[]" id="">programacion web <br><br>
-
-    <label for="color" color preferido></label>
-    <input type="color" required><br><br>
-
-    <label for="imagen_perfil">imagen de perfil</label><br>
-    <input type="file" accept="pnj/jpg"><br><br>
-
-    <input type="submit" value="Guardar alumno"><br><br>
+<body style="width: 30%;">
+    <form action="practica5.php" method="post">
+        <h1>Juego del gato</h1><hr>
+        <table>
+            <tr>
+                <td><input type="text" name="cuadro[]" value="X" required></td>
+                <td><input type="text" name="cuadro[]" value="O" required></td>
+                <td><input type="text" name="cuadro[]" value="O" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="cuadro[]" value="O" required></td>
+                <td><input type="text" name="cuadro[]" value="X" required></td>
+                <td><input type="text" name="cuadro[]" value="X" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="cuadro[]" value="X" required></td>
+                <td><input type="text" name="cuadro[]" value="O" required></td>
+                <td><input type="text" name="cuadro[]" value="X" required></td>
+            </tr>
+        </table><br>
+        <input type="submit" value="revisar">
+    </form>
 
     
-    PRACTICA 5 FORMULARIO DE REGISTRO DEL AlUMNO
-    13/FEB/2023
-
-
-
-
 </body>
 </html>
